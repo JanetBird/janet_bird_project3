@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Where to Next</title>
+    <title>Where To Next</title>
 </head>
 <body>
+    <header>
+        <h1>Where To Next</h1>
+        <p>Let us help you decide where to travel next</p>
+
+        <a href="#">Start</a>
+    </header>
+
+    <main>
+        <form action="">
+            <section class="place">
+                <h2>Destination Type</h2>
+                <label for="nature">Nature</label>
+                <input type="radio" id="nature" value="nature" name="place">
+                <label for="city">City</label>
+                <input type="radio" id="city" value="city" name="place">
+                <label for="culture">Culture</label>
+                <input type="radio" id="culture" value="culture" name="place">
+            </section>
+
+            <section class="people">
+                <h2>Who is going?</h2>
+                <label for="family">Family</label>
+                <input type="radio" name="people" value="family" id="family">
+                <label for="couple">Couple</label>
+                <input type="radio" name="people" value="couple" id="couple">
+                <label for="friends">Friends</label>
+                <input type="radio" name="people" value="friends" id="friends">
+                <label for="alone">Leave me alone</label>
+                <input type="radio" name="people" value="alone" id="alone">
+            </section>
+
+            <section class="activity">
+                <h2>Activity Level</h2>
+                <label for="alot">a lot</label>
+                <input type="radio" name="activity" value="alot" id="alot">
+                <label for="little">a little</label>
+                <input type="radio" name="activity" value="little" id="little">
+                <label for="">I want to do nothing</label>
+                <input type="radio" name="activity" value="nothing" id="nothing">
+            </section>
+
+            <div class="submit-container">
+                <input type="submit" value="Let's Go">
+            </div>
+        </form>
+        <section class="results">
+            
+        </section>
+    </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="script.js"></script>
 </body>
