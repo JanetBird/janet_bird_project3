@@ -1,82 +1,93 @@
 const destination = {
     nature: [
         {
-            place: "Lauterbrunnen",
+            place: "lauterbrunnen",
             people: ["couple", "alone", "family", "friends"],
-            activityLevel: "alot" 
+            activityLevel: "alot"
         },
         {
-            place: "Railay Beach",
-            people: ["couple", "alone", "friends"],
-            activityLevel: "little"
+            place: "railayBeach",
+            people: ["alone", "friends"],
+            activityLevel: ["little", "nothing"]
         },
         {
-            place: "Jasper",
+            place: "jasper",
             people: ["family", "couple"],
-            activityLevel: "nothing"
+            activityLevel: ["nothing", "little"]
         }
     ],
     city: [
         {
-            place: "Kyoto",
-            people: ["family", "alone"],
+            place: "kyoto",
+            people: ["couple", "alone", "family", "friends"],
             activityLevel: "alot"
         },
         {
-            place: "Barcelona",
-            people: ["couple", "family"],
-            activityLevel: "a little"
+            place: "barcelona",
+            people: ["alone", "friends"],
+            activityLevel: ["little", "nothing"]
         },
         {
-            place: "New York City",
-            people: ["couple", "alone"],
-            activityLevel: "nothing"
-
+            place: "nyc",
+            people: ["family", "couple"],
+            activityLevel: ["nothing", "little"]
         }
     ],
     culture: [
         {
-            place: "Bruges",
-            people: ["couple", "alone"],
-            activityLevel: "nothing"
-        },
-        {
-            place: "Berlin",
-            people: ["family", "friends", "couple"],
+            place: "bruges",
+            people: ["couple", "alone", "family", "friends"],
             activityLevel: "alot"
         },
         {
-            place: "Stuttgart",
-            people: ["family", "alone", "friends"],
-            activityLevel: "little"
+            place: "berlin",
+            people: ["alone", "friends"],
+            activityLevel: ["little", "nothing"]
+        },
+        {
+            place: "stuttgart",
+            people: ["family", "couple"],
+            activityLevel: ["nothing", "little"]
         }
     ]
 };
 
+
 $(function(event){
+
+const userChoiceType = $("input[name=place]:checked").val();
+const userChoicePeople = $("input[name=people]:checked").val();
+const userChoiceActivity = $("input[name=activity]:checked").val();
+
 
     $("form").on("submit", function (event) {
 
         event.preventDefault();
 
-        const userChoiceType = $("input[name=place]:checked").val();
-        const userChoicePeople = $("input[name=people]:checked").val();
-        const userChoiceActivity = $("input[name=activity]:checked").val();
-
         const vacationType = destination[userChoiceType];
-
         //filter array with to include only the objects that contain the value of userChoicePeople in the value of the people key 
 
         const peopleChoice = vacationType.filter(function (type){
-            return type.people.includes(userChoicePeople) == true;
+            return type.people.includes(userChoicePeople) === true;
         });
 
-        console.log(peopleChoice);
+        const activityChoice = peopleChoice.filter(function (type){
+            return type.activityLevel.includes(userChoiceActivity) === true;
+        });
 
-        
-        
+        const result = activityChoice[0].place;
 
+        $(`.${result}`).removeClass("active");
+
+        $(`.${result}`).addClass("active");
+
+        $("form").addClass("hidden");
 
 
     });
+
+    // $("button").click(function () {
+    //     // window.location.href = 'https://www.google.com';
+    // });
 });
+
