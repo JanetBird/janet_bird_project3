@@ -53,23 +53,23 @@ const destination = {
 };
 
 
-$(function(event){
-
-const userChoiceType = $("input[name=place]:checked").val();
-const userChoicePeople = $("input[name=people]:checked").val();
-const userChoiceActivity = $("input[name=activity]:checked").val();
-
+$(function (event) {
 
     $("form").on("submit", function (event) {
 
         event.preventDefault();
 
-        const vacationType = destination[userChoiceType];
-        //filter array with to include only the objects that contain the value of userChoicePeople in the value of the people key 
+        const userChoiceType = $("input[name=place]:checked").val();
+        const userChoicePeople = $("input[name=people]:checked").val();
+        const userChoiceActivity = $("input[name=activity]:checked").val();
 
-        const peopleChoice = vacationType.filter(function (type){
-            return type.people.includes(userChoicePeople) === true;
+        const vacationType = destination[userChoiceType];
+
+        const peopleChoice = vacationType.filter(function (type) {
+            return type.people.includes(userChoicePeople) == true;
         });
+
+        console.log(peopleChoice);
 
         const activityChoice = peopleChoice.filter(function (type){
             return type.activityLevel.includes(userChoiceActivity) === true;
@@ -85,9 +85,5 @@ const userChoiceActivity = $("input[name=activity]:checked").val();
 
 
     });
-
-    // $("button").click(function () {
-    //     // window.location.href = 'https://www.google.com';
-    // });
 });
 

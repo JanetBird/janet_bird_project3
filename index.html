@@ -6,47 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Where To Next</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Where To Next</h1>
-        <p>Let us help you decide where to travel next</p>
-
-        <a href="#">Start</a>
+    <header class="header">
+        <nav class="header-nav wrapper">
+            <h2>What is your next hiking adventure</h2>
+        </nav>
+        <section class="main">
+            <h1>Where To Next  ...</h1>
+            <div class="main-start">
+                <h3>Start</h3>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </section>
     </header>
 
     <main>
-        <form action="">
-            <section class="place">
-                <h2>Destination Type</h2>
-                <label for="nature">Nature</label>
+        <form action="" class="form wrapper">
+            <section class="form-question question-type">
+                <h4>Destination Type ?</h4>
+                <label for="nature" class="radio-label">- Nature</label>
                 <input type="radio" id="nature" value="nature" name="place">
-                <label for="city">City</label>
+                <label for="city" class="radio-label">- City</label>
                 <input type="radio" id="city" value="city" name="place">
-                <label for="culture">Culture</label>
+                <label for="culture" class="radio-label">- Culture</label>
                 <input type="radio" id="culture" value="culture" name="place">
             </section>
 
-            <section class="people">
-                <h2>Who is going?</h2>
-                <label for="family">Family</label>
-                <input type="radio" name="people" value="family" id="family">
-                <label for="couple">Couple</label>
-                <input type="radio" name="people" value="couple" id="couple">
-                <label for="friends">Friends</label>
-                <input type="radio" name="people" value="friends" id="friends">
-                <label for="alone">Leave me alone</label>
-                <input type="radio" name="people" value="alone" id="alone">
+            <section class="form-question question-people">
+                <div class="question-people-div">
+                    <h4>Who is going ?</h4>
+                    <label for="family" class="radio-label">- Family</label>
+                    <input type="radio" name="people" value="family" id="family">
+                    <label for="couple" class="radio-label">- Couple</label>
+                    <input type="radio" name="people" value="couple" id="couple">
+                    <label for="friends" class="radio-label">- Friends</label>
+                    <input type="radio" name="people" value="friends" id="friends">
+                    <label for="alone" class="radio-label">- Self Discovery</label>
+                    <input type="radio" name="people" value="alone" id="alone">
+                </div>
             </section>
 
-            <section class="activity">
-                <h2>Activity Level</h2>
-                <label for="alot">a lot</label>
+            <section class="form-question question-level">
+                <h4>Activity Level ?</h4>
+                <label for="alot" class="radio-label">- a lot</label>
                 <input type="radio" name="activity" value="alot" id="alot">
-                <label for="little">a little</label>
+                <label for="little" class="radio-label">- a little</label>
                 <input type="radio" name="activity" value="little" id="little">
-                <label for="">I want to do nothing</label>
+                <label for="nothing" class="radio-label">- I want to do nothing</label>
                 <input type="radio" name="activity" value="nothing" id="nothing">
             </section>
 
