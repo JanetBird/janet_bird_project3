@@ -14,12 +14,12 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header-nav wrapper">
+        <nav class="header-nav">
             <h2>What is your next hiking adventure</h2>
         </nav>
         <section class="main">
-            <h1>Where To Next  ...</h1>
-            <div class="main-start">
+            <div class="main-start wrapper">
+                <h1>Where To Next ...</h1>
                 <h3>Start</h3>
                 <i class="fas fa-arrow-down"></i>
             </div>
@@ -28,38 +28,50 @@
 
     <main>
         <form action="" class="form wrapper">
-            <section class="form-question question-type">
-                <h4>Destination Type ?</h4>
-                <label for="nature" class="radio-label">- Nature</label>
-                <input type="radio" id="nature" value="nature" name="place">
-                <label for="city" class="radio-label">- City</label>
-                <input type="radio" id="city" value="city" name="place">
-                <label for="culture" class="radio-label">- Culture</label>
-                <input type="radio" id="culture" value="culture" name="place">
+            <section class="form-question">
+                <div class="question-type">
+                    <h4>Destination Type ?</h4>
+                    <input type="radio" id="nature" value="nature" name="place">
+                    <label for="nature" class="radio-label">- Nature</label>
+                    <input type="radio" id="city" value="city" name="place">
+                    <label for="city" class="radio-label">- City</label>
+                    <input type="radio" id="culture" value="culture" name="place">
+                    <label for="culture" class="radio-label">- Culture</label>
+                </div>
+
+                <div class="footprint footprint-string">
+                    <img class="footprint footprint-left-1" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-1" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-2" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-2" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-3" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                </div>
+
             </section>
+
 
             <section class="form-question question-people">
                 <div class="question-people-div">
                     <h4>Who is going ?</h4>
-                    <label for="family" class="radio-label">- Family</label>
                     <input type="radio" name="people" value="family" id="family">
-                    <label for="couple" class="radio-label">- Couple</label>
+                    <label for="family" class="radio-label">- Family</label>
                     <input type="radio" name="people" value="couple" id="couple">
-                    <label for="friends" class="radio-label">- Friends</label>
+                    <label for="couple" class="radio-label">- Couple</label>
                     <input type="radio" name="people" value="friends" id="friends">
-                    <label for="alone" class="radio-label">- Self Discovery</label>
+                    <label for="friends" class="radio-label">- Friends</label>
                     <input type="radio" name="people" value="alone" id="alone">
+                    <label for="alone" class="radio-label">- Self Discovery</label>
                 </div>
             </section>
 
             <section class="form-question question-level">
                 <h4>Activity Level ?</h4>
-                <label for="alot" class="radio-label">- a lot</label>
                 <input type="radio" name="activity" value="alot" id="alot">
-                <label for="little" class="radio-label">- a little</label>
+                <label for="alot" class="radio-label">- a lot</label>
                 <input type="radio" name="activity" value="little" id="little">
-                <label for="nothing" class="radio-label">- I want to do nothing</label>
+                <label for="little" class="radio-label">- a little</label>
                 <input type="radio" name="activity" value="nothing" id="nothing">
+                <label for="nothing" class="radio-label">- I want to do nothing</label>
             </section>
 
             <div class="submit-container">
@@ -72,55 +84,55 @@
 
     <section class="location lauterbrunnen">
         <header>
-            <h1>Lauterbrunnen</h1>
+            <h5>Lauterbrunnen</h5>
         </header>
     </section>
 
     <section class="location railayBeach">
         <header>
-            <h1>Railay Beach</h1>
+            <h5>Railay Beach</h5>
         </header>
     </section>
 
     <section class="location jasper">
         <header>
-            <h1>Jasper</h1>
+            <h5>Jasper</h5>
         </header>
     </section>
 
     <section class="location kyoto ">
         <header>
-            <h1>Kyoto</h1>
+            <h5>Kyoto</h5>
         </header>
     </section>
 
     <section class="location barcelona">
         <header>
-            <h1>Barcelona</h1>
+            <h5>Barcelona</h5>
         </header>
     </section>
 
     <section class="location nyc">
         <header>
-            <h1>NYC</h1>
+            <h5>NYC</h5>
         </header>
     </section>
 
     <section class="location bruges">
         <header>
-            <h1>Bruges</h1>
+            <h5>Bruges</h5>
         </header>
     </section>
 
     <section class="location berlin">
         <header>
-            <h1>Berlin</h1>
+            <h5>Berlin</h5>
         </header>
     </section>
 
     <section class="location stuttgart">
         <header>
-            <h1>Stuttgart</h1>
+            <h5>Stuttgart</h5>
         </header>
     </section>
 </body>

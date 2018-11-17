@@ -1,5 +1,5 @@
 input[type="radio"] {
-    /* opacity: 0; */
+    opacity: 0;
     position: absolute;
 }
 
@@ -18,18 +18,18 @@ input[type="radio"] {
 }
 
 label {
-    @include dark-font(1.6rem);
+    @include dark-font(2rem);
 }
 
 .form {
     padding: 100px 0;
     &-question {
-        padding-bottom: 100px;
+        padding-bottom: 300px;
     }
 }
 
 h4 {
-    @include accent-font(2.4rem);
+    @include accent-font(3.2rem);
     font-weight: 900;
 }
 
@@ -42,8 +42,56 @@ h4 {
 }
 
 label:hover {
-    color: #FE5F55;
+    color: $color-accent2;
 }
 
 input[type="radio"]:checked+label{ 
-    text-decoration: underline; } 
+    text-decoration: line-through;
+    color: $color-accent2;
+ } 
+
+ .form-question {
+    //  border: 2px solid red;
+     display: flex;
+     align-items: center;
+     position: relative;
+ }
+
+ .question-type {
+    //   border: 2px solid red;
+ }
+
+ .footprint-string {
+    //   border: 2px solid red;
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      transform: rotateZ(50deg);
+      margin-top: 700px;
+      position: absolute;
+      left: 300px;
+    //   margin-left: 200px;
+ }
+
+
+.footprint-left-1 {
+    margin-right: 50px;
+ }
+
+ .footprint-right-1 {
+    transform: rotatez(25deg);
+ }
+
+ .footprint-left-2 {
+    align-self: center;
+    transform: rotatez(30deg);
+ }
+
+ .footprint-right-2 {
+    transform: rotatez(40deg);
+ }
+
+ .footprint-left-3 {
+    align-self: center;
+    transform: rotatez(50deg);
+ }

@@ -1,6 +1,5 @@
 h1 {
-    @include light-font(7rem);
-    padding: 150px 160px 100px 100px;
+    @include light-font(6.8rem);
 }
 
 h2 {
@@ -15,19 +14,21 @@ h3 {
     min-height: 100vh;
     background-size: cover;
     background-position: center bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
     &-start {
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: 400px;
-        padding-left: 100px;
+        width: 1280px;
     }
 }
 
 .fas {
     color: $color-sectxt;
     font-size: 4rem;
-    padding-bottom: 60px;
+    padding: 0  0 60px 50px;
 }
 .header-nav {
     display: flex;
