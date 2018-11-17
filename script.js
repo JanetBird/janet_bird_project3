@@ -85,54 +85,21 @@ $(function (event) {
 
     });
 
-    $('.button').on('click', function () {
-        $('.footprint-left-1').css('opacity');
-        $('.footprint-left-1').addClass('animate');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-left-2').delay(1500).css('opacity');
-        $('.footprint-left-2').addClass('animate-1');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-right-1').delay(1000).css('opacity');
-        $('.footprint-right-1').addClass('animate-2');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-right-2').delay(1500).css('opacity');
-        $('.footprint-right-2').addClass('animate-3');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-left-3').delay(2000).css('opacity');
-        $('.footprint-left-3').addClass('animate-4');
-    });
+    const footprint = function (klass, delay, animation) {
+        $(klass).delay(delay);
+        $(klass).addClass(animation);
+    }
     
-    $('.button').on('click', function () {
-        $('.footprint-left-1').css('opacity');
-        $('.footprint-left-1').addClass('animate');
+    $(".button").on("click", function () {
+        footprint(".footprint-left-1", 0, "animate");
+        footprint(".footprint-right-1", 500, "animate");
+        footprint(".footprint-left-2", 1000, "animate");
+        footprint(".footprint-right-2", 1500, "animate");
+        footprint(".footprint-left-3", 2000, "animate");
     });
 
-    $('.button').on('click', function () {
-        $('.footprint-left-2').delay(1500).css('opacity');
-        $('.footprint-left-2').addClass('animate-1');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-right-1').delay(1000).css('opacity');
-        $('.footprint-right-1').addClass('animate-2');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-right-2').delay(1500).css('opacity');
-        $('.footprint-right-2').addClass('animate-3');
-    });
-
-    $('.button').on('click', function () {
-        $('.footprint-left-3').delay(2000).css('opacity');
-        $('.footprint-left-3').addClass('animate-4');
-    });
+    setTimeout(function () {
+        $(".animate").removeClass("animate");
+    }, 1000);
 
 });

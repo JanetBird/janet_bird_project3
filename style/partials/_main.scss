@@ -74,27 +74,8 @@ input[type="radio"]:checked+label{
  .animate {
     opacity: 0;
     animation: fade-out 5s forwards;
-    &-1 {
-        opacity: 0;
-        animation: fade-out 5s forwards;
-        animation-delay: 1s;
-    }
-    &-2 {
-        opacity: 0;
-        animation: fade-out 5s forwards;
-        animation-delay: 2s;
-    }
-    &-3 {
-        opacity: 0;
-        animation: fade-out 5s forwards;
-        animation-delay: 3s;
-    }
-    &-4 {
-        opacity: 0;
-        animation: fade-out 5s forwards;
-        animation-delay: 4s;
-    }
  }
+ 
  .footprint-left-1 {
     margin-right: 50px;
     opacity: 0;
