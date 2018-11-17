@@ -83,7 +83,31 @@ $(function (event) {
 
         $("form").addClass("hidden");
 
-
     });
-});
 
+    $('.button').on('click', function () {
+        $('.footprint-left-1').css('opacity');
+        $('.footprint-left-1').addClass('animate');
+    });
+
+    $('.button').on('click', function () {
+        $('.footprint-left-2').delay(1500).css('opacity');
+        $('.footprint-left-2').addClass('animate-1');
+    });
+
+    $('.button').on('click', function () {
+        $('.footprint-right-1').delay(1000).css('opacity');
+        $('.footprint-right-1').addClass('animate-2');
+    });
+
+    $('.button').on('click', function () {
+        $('.footprint-right-2').delay(1500).css('opacity');
+        $('.footprint-right-2').addClass('animate-3');
+    });
+
+    $('.button').on('click', function () {
+        $('.footprint-left-3').delay(2000).css('opacity');
+        $('.footprint-left-3').addClass('animate-4');
+    });
+
+});

@@ -2,7 +2,7 @@
 $color-maintxt: #1f1f1f;
 $color-sectxt: #f6f6f6;
 $color-accent: #EEF5DB;
-$color-accent2: #FE5F55;
+$color-accent2: #0a741b;
 $color-accent3: #4F6367;
 
 
@@ -28,7 +28,14 @@ $color-accent3: #4F6367;
     color: $color-accent3;
 }
 
+@mixin sans-font($fontSize) {
+    font-size: $fontSize;
+    color: $color-sectxt;
+    font-family: 'Montserrat', sans-serif; 
+}
+
 body {
+    font-family: 'Montserrat', sans-serif;
     font-family: 'Homemade Apple', cursive;
     font-size: 62.5%;
 }
@@ -37,3 +44,4 @@ body {
     max-width: 1280px;
     margin: 0 auto;
 }
+
