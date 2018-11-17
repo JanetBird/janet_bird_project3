@@ -25,7 +25,6 @@ label {
     padding: 100px 0;
     &-question {
         padding-bottom: 300px;
-        padding-top: 100px;
     }
 }
 
@@ -36,6 +35,7 @@ h4 {
 
 .question-people {
     display: flex;
+    flex-direction: column;
     justify-content: right;
     &-div {
         width: 40%;
@@ -52,18 +52,12 @@ input[type="radio"]:checked+label{
  } 
 
  .form-question {
-    //  border: 2px solid red;
      display: flex;
-     align-items: center;
+     align-items: flex-end;
      position: relative;
  }
 
- .question-type {
-    //   border: 2px solid red;
- }
-
  .footprint-string {
-    //   border: 2px solid red;
       height: 200px;
       display: flex;
       align-items: flex-end;
@@ -72,19 +66,9 @@ input[type="radio"]:checked+label{
       position: absolute;
       bottom: 100px;
       left: 250px;
-    //   margin-left: 200px;
- }
-
-
-.footprint-left-1 {
-    margin-right: 50px;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    
+      &-2 {
+          transform: rotateZ(145deg);
+      }
  }
 
  .animate {
@@ -109,6 +93,19 @@ input[type="radio"]:checked+label{
         opacity: 0;
         animation: fade-out 5s forwards;
         animation-delay: 4s;
+    }
+ }
+ .footprint-left-1 {
+    margin-right: 50px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    &-B {
+        transform: rotateZ(45deg);
+        align-self: center;
     }
  }
 
@@ -156,6 +153,21 @@ input[type="radio"]:checked+label{
     border-radius: 20px;
     border: 10px solid lightgray;
     margin: 25px 0 0 30px;
+    &-2 {
+        margin-right: 325px;
+    }
+}
+
+input[type="submit"] {
+    background: $color-accent2;
+    width: 200px;
+    height: 110px;
+    border-radius: 20px;
+    border: 10px solid lightgray;
+    margin: 25px 0 0 30px;
+    @include sans-font(2rem);
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .next-question:hover {
@@ -174,7 +186,7 @@ h5 {
     margin: 0;
 }
 
-.footprint, .opacity {
+.opacity {
     opacity: 1;
 }
 
