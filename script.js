@@ -1,53 +1,53 @@
 const destination = {
-    nature: [
+    forest: [
         {
             place: "lauterbrunnen",
             people: ["couple", "alone", "family", "friends"],
-            activityLevel: "alot"
+            activityLevel: "difficult"
         },
         {
-            place: "railayBeach",
+            place: "kalalau",
             people: ["alone", "friends"],
-            activityLevel: ["little", "nothing"]
+            activityLevel: ["easy", "moderate"]
         },
         {
             place: "jasper",
             people: ["family", "couple"],
-            activityLevel: ["nothing", "little"]
+            activityLevel: ["easy", "moderate"]
         }
     ],
-    city: [
+    desert: [
         {
-            place: "kyoto",
+            place: "zion",
             people: ["couple", "alone", "family", "friends"],
-            activityLevel: "alot"
+            activityLevel: "difficult"
         },
         {
-            place: "barcelona",
+            place: "laugavegur",
             people: ["alone", "friends"],
-            activityLevel: ["little", "nothing"]
+            activityLevel: ["easy", "moderate"]
         },
         {
-            place: "nyc",
+            place: "tonto",
             people: ["family", "couple"],
-            activityLevel: ["nothing", "little"]
+            activityLevel: ["easy", "moderate"]
         }
     ],
-    culture: [
+    glacial: [
         {
-            place: "bruges",
+            place: "fitzroytrek",
             people: ["couple", "alone", "family", "friends"],
-            activityLevel: "alot"
+            activityLevel: "difficult"
         },
         {
-            place: "berlin",
+            place: "lagunaglacier",
             people: ["alone", "friends"],
-            activityLevel: ["little", "nothing"]
+            activityLevel: ["easy", "moderate"]
         },
         {
-            place: "stuttgart",
+            place: "malignecanyon",
             people: ["family", "couple"],
-            activityLevel: ["nothing", "little"]
+            activityLevel: ["easy", "moderate"]
         }
     ]
 };
@@ -59,7 +59,7 @@ $(function (event) {
 
     $(".main-start-icon").on("click", function () {
         $('html,body').animate({
-            scrollTop: $(".question-type").offset().top
+            scrollTop: $(".form-question-type").offset().top
         }, 2000);
     });
 

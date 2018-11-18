@@ -19,6 +19,7 @@ input[type="radio"] {
 
 label {
     @include dark-font(2rem);
+    line-height: 1.25;
 }
 
 .form {
@@ -49,8 +50,14 @@ input[type="radio"]:checked+label{
      position: relative;
      display: flex;
      align-items: center;
-     &-people, &-level {
+     &-people {
          justify-content: space-between;
+         figure {
+             width: 60%;
+         }
+         figure img {
+             width: 100%;
+         }
      }
  }
 

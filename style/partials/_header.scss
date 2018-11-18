@@ -1,7 +1,8 @@
-h1 {
+.title {
     @include light-font(6.8rem);
     text-align: left;
-    margin-top: 100px;
+    margin-top: 200px;
+    line-height: 1.25;
 }
 
 h2 {
@@ -23,14 +24,13 @@ h3 {
     flex-direction: column;
     padding-left: 100px;
     position: relative;
-    &-start {
-        width: 1280px;
-        &-icon {
+    &-start-icon {
             position: absolute;
             bottom: 100px;
+            left: 350px;
         }
-    }
 }
+
 
 .fas-header {
     color: $color-maintxt;

@@ -1,0 +1,131 @@
+@media (max-width: 1480px) {
+
+    .wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .main {
+        background-position: left top;
+    }
+}
+
+@media (max-width: 1375px) {
+
+    .moon {
+        display: none;
+    }
+    
+
+    .form-question-people {
+        flex-direction: column-reverse;
+        &-div {
+            align-self: flex-end;
+        }
+        figure {
+            width: 100%;
+        }
+    }
+
+    .form-question-level {
+        flex-direction: column;
+        align-items: flex-start;
+        figure {
+            align-self: flex-end;
+        }
+    }
+
+    .question-people-div {
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1375px) {
+
+    .header-nav {
+    justify-content: flex-start;
+    padding: 50px;
+    }
+
+     .form-question-type {
+        flex-direction: column;
+        align-items: flex-start;
+        figure {
+            align-self: flex-end;
+        }
+    }
+
+    .question-level-div {
+       padding-bottom: 100px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+     .location-div{
+        &-info {
+        flex-direction: column;
+        }
+        &-stats {
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &-img {
+            width: 100%;
+            img {
+            margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+
+    .header-nav {
+        padding: 20px;
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    .title {
+        font-size: 4.8rem;
+    }
+
+    .main {
+    background-image: url(../assets/image-1.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: 25% top;
+        &-start-icon {
+            left: 100px;
+        }
+    }
+
+    .form-question-type-div h4 {
+        font-size: 2.4rem;
+    }
+
+    .wrapper {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .form-question img  {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .main {
+        padding: 20px;
+    }
+
+    form-question {
+        align-items: center;
+    }
+
+    .location-div-stats h6 {
+        font-size: 2.4rem;
+    }
+}
