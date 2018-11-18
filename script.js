@@ -55,11 +55,15 @@ const destination = {
 
 $(function (event) {
 
+    //MAIN START BUTTON FUNCTION
+
     $(".main-start-icon").on("click", function () {
         $('html,body').animate({
             scrollTop: $(".question-type").offset().top
-        }, 3000);
+        }, 2000);
     });
+
+    //FORM FUNCTION
 
     $("form").on("submit", function (event) {
 
@@ -87,9 +91,15 @@ $(function (event) {
 
         $(`.${result}`).addClass("active");
 
+        $("header").addClass("hidden");
+
         $("form").addClass("hidden");
 
+        console.log(result);
+
     });
+
+    //NEXT BUTTON FUNCTION
 
     const footprint = function (klass, delay, animation) {
         $(klass).delay(delay);
@@ -112,6 +122,7 @@ $(function (event) {
         }, 6000);
     });
 
+
     $(".button2").on("click", function () {
         footprint(".footprint-left-4", 0, "animate");
         footprint(".footprint-right-3", 500, "animate");
@@ -127,4 +138,11 @@ $(function (event) {
             scrollTop: $(".form-question-level").offset().top
         }, 6000);
     });
+
+    //BACK BUTTON 
+
+    $(".button3").on("click", function () {
+        location.reload();
+    })
+
 });

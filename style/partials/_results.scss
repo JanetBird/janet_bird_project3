@@ -1,0 +1,66 @@
+.location-div {
+    background-image: url(../assets/image-6.jpg);
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    &-info {
+        padding-top: 100px;
+        display: flex;
+    }
+    &-stats {
+        width: 50%;
+    }
+    &-img {
+        width: 50%;
+        img {
+        margin-left: 50px;
+        width: 100%;
+        }
+    }
+}
+
+p, li, ul {
+    @include sans-font(1.6rem);
+    color: $color-maintxt;
+    list-style: none;
+    padding: 0;
+    span {
+        color: $color-accent2;
+    }
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+h6 {
+     @include accent-font(3.6rem);
+     margin: 0;
+     line-height: 1;  
+}
+
+.button2 {
+    background: $color-accent2;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 5px solid lightgray;
+    @include sans-font(1.6rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    &:hover {
+        background: $color-accent3; 
+    }
+}
+
+.button3 {
+    @include dark-font(1.6rem);
+    border-radius: 10px;
+    line-height: 2;
+    box-shadow: 10px 10px 5px;
+    padding: 0 20px;
+    &:hover {
+        background: lightgray;
+    }
+}

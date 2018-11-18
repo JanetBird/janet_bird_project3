@@ -16,12 +16,7 @@ $color-accent3: #4F6367;
     font-size: $fontSize;
     color: $color-maintxt;
     margin: 0;
-} 
-
-@mixin link-font($fontSize) {
-    font-size: $fontSize;
-    color: $color-maintxt;
-} 
+}  
 
 @mixin accent-font($fontSize) {
     font-size: $fontSize;
