@@ -33,13 +33,7 @@ h4 {
     margin: 0;
 }
 
-.question-people {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    &-div {
-        width: 40%;
-    }
+.question-type figure {
 }
 
 label:hover {
@@ -52,9 +46,15 @@ input[type="radio"]:checked+label{
  } 
 
  .form-question {
-     display: flex;
-     align-items: flex-end;
      position: relative;
+     display: flex;
+     align-items: center;
+     &-people {
+         justify-content: space-between;
+         figure {
+             align-self: flex-start;
+         }
+     }
  }
 
  .footprint-string {
@@ -62,7 +62,6 @@ input[type="radio"]:checked+label{
       display: flex;
       align-items: flex-end;
       transform: rotateZ(50deg);
-      margin-top: 700px;
       position: absolute;
       bottom: 100px;
       left: 250px;
@@ -76,7 +75,7 @@ input[type="radio"]:checked+label{
     animation: fade-out 5s forwards;
  }
  
- .footprint-left-1 {
+ .footprint-left-1, .footprint-left-4 {
     margin-right: 50px;
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
@@ -90,27 +89,27 @@ input[type="radio"]:checked+label{
     }
  }
 
- .footprint-right-1 {
+ .footprint-right-1, .footprint-right-3 {
     transform: rotatez(25deg);
     opacity: 0;
     animation-delay: 1s;
 
  }
 
- .footprint-left-2 {
+ .footprint-left-2, .footprint-left-5 {
     align-self: center;
     transform: rotatez(30deg);
     opacity: 0;
     animation-delay: 2s;
  }
 
- .footprint-right-2 {
+ .footprint-right-2, .footprint-right-4  {
     transform: rotatez(40deg);
     opacity: 0;
     animation-delay: 3s;
  }
 
- .footprint-left-3 {
+ .footprint-left-3, .footprint-left-6 {
     align-self: center;
     transform: rotatez(50deg);
     opacity: 0;
@@ -135,7 +134,7 @@ input[type="radio"]:checked+label{
     border: 10px solid lightgray;
     margin: 25px 0 0 30px;
     &-2 {
-        margin-right: 325px;
+        margin-right: 175px;
     }
 }
 

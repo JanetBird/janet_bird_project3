@@ -55,6 +55,12 @@ const destination = {
 
 $(function (event) {
 
+    $(".main-start-icon").on("click", function () {
+        $('html,body').animate({
+            scrollTop: $(".question-type").offset().top
+        }, 3000);
+    });
+
     $("form").on("submit", function (event) {
 
         event.preventDefault();
@@ -96,10 +102,29 @@ $(function (event) {
         footprint(".footprint-left-2", 1000, "animate");
         footprint(".footprint-right-2", 1500, "animate");
         footprint(".footprint-left-3", 2000, "animate");
+
+        setTimeout(function () {
+            $(".animate").removeClass("animate");
+        }, 6000);
+
+        $('html,body').animate({
+            scrollTop: $(".form-question-people").offset().top
+        }, 6000);
     });
 
-    setTimeout(function () {
-        $(".animate").removeClass("animate");
-    }, 1000);
+    $(".button2").on("click", function () {
+        footprint(".footprint-left-4", 0, "animate");
+        footprint(".footprint-right-3", 500, "animate");
+        footprint(".footprint-left-5", 1000, "animate");
+        footprint(".footprint-right-4", 1500, "animate");
+        footprint(".footprint-left-6", 2000, "animate");
 
+        setTimeout(function () {
+            $(".animate").removeClass("animate");
+        }, 6000);
+
+        $('html,body').animate({
+            scrollTop: $(".form-question-level").offset().top
+        }, 6000);
+    });
 });

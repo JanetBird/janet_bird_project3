@@ -20,8 +20,10 @@
         <section class="main">
             <div class="main-start wrapper">
                 <h1>Where To Next ...</h1>
-                <h3>Start</h3>
-                <i class="fas fa-arrow-down fas-header"></i>
+                <div class="main-start-icon">
+                    <h3>Start</h3>
+                    <i class="fas fa-arrow-down fas-header"></i>
+                </div>
             </div>
         </section>
     </header>
@@ -44,6 +46,10 @@
                     </div>
                 </div>
 
+                <figure>
+                    <img src="./assets/image-3.png" alt="top view of a black coffee in mug">
+                </figure>
+
                 <div class="footprint footprint-string">
                     <img class="footprint footprint-left-1" src="./assets/footprint-left.png" alt="footprints leading to next question">
                     <img class="footprint footprint-right-1" src="./assets/footprint-right.png" alt="footprints leading to next question">
@@ -51,11 +57,14 @@
                     <img class="footprint footprint-right-2" src="./assets/footprint-right.png" alt="footprints leading to next question">
                     <img class="footprint footprint-left-3" src="./assets/footprint-left.png" alt="footprints leading to next question">
                 </div>
-
             </section>
 
 
-            <section class="form-question question-people">
+            <section class="form-question form-question-people">
+                <figure>
+                    <img src="./assets/image-2.png" alt="Woman on the peak of green mountain">
+                </figure>
+
                 <div class="question-people-div">
                     <h4>Who is going ?</h4>
                     <input type="radio" name="people" value="family" id="family">
@@ -66,23 +75,24 @@
                     <label for="friends" class="radio-label">- Friends</label>
                     <input type="radio" name="people" value="alone" id="alone">
                     <label for="alone" class="radio-label">- Self Discovery</label>
-                </div>
 
-                <div class="button next-question next-question-2">
-                    <h5>Next</h5>
-                    <i class="fas fa-hiking fas-main"></i>
+                    <div class="button2 next-question next-question-2">
+                        <h5>Next</h5>
+                        <i class="fas fa-hiking fas-main"></i>
+                    </div>
                 </div>
-                
+                 
                 <div class="footprint footprint-string footprint-string-2">
-                    <img class="footprint footprint-left-1 footprint-left-1-B" src="./assets/footprint-left.png" alt="footprints leading to next question">
-                    <img class="footprint footprint-right-1" src="./assets/footprint-right.png" alt="footprints leading to next question">
-                    <img class="footprint footprint-left-2" src="./assets/footprint-left.png" alt="footprints leading to next question">
-                    <img class="footprint footprint-right-2" src="./assets/footprint-right.png" alt="footprints leading to next question">
-                    <img class="footprint footprint-left-3" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-4 footprint-left-1-B" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-3" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-5" src="./assets/footprint-left.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-right-4" src="./assets/footprint-right.png" alt="footprints leading to next question">
+                    <img class="footprint footprint-left-6" src="./assets/footprint-left.png" alt="footprints leading to next question">
                 </div>
             </section>
 
-            <section class="question-level">
+            <section class="form-question form-question-level">
+            <div class="question-level-div">
                 <h4>Activity Level ?</h4>
                 <input type="radio" name="activity" value="alot" id="alot">
                 <label for="alot" class="radio-label">- a lot</label>
@@ -90,12 +100,22 @@
                 <label for="little" class="radio-label">- a little</label>
                 <input type="radio" name="activity" value="nothing" id="nothing">
                 <label for="nothing" class="radio-label">- I want to do nothing</label>
+
+                <div class="submit-container">
+                    <input id="button" type="submit" value="Let's Go">
+                    <i class="fas fa-hiking fas-main"></i>
+                </div>
+            </div>
+
+                <figure>
+                    <img src="./assets/image-4.png" alt="top view of a black coffee in mug">
+                </figure>
+
+                <figure class="moon">
+                    <img src="./assets/image-5.png" alt="top view of a black coffee in mug">
+                </figure>
             </section>
 
-            <div class="submit-container">
-                <input id="button" type="submit" value="Let's Go">
-                <i class="fas fa-hiking fas-main"></i>
-            </div>
         </form>
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
