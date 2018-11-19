@@ -150,8 +150,10 @@ input[type="radio"]:checked+label{
     border: 10px solid lightgray;
     margin: 25px 0 0 30px;
     @include sans-font(2rem);
-    font-weight: 900;
     text-transform: uppercase;
+    &:hover {
+    background: $color-accent3;
+    }
 }
 
 .next-question:hover {

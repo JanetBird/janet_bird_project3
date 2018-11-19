@@ -41,17 +41,16 @@ h6 {
      line-height: 1;  
 }
 
-.button2 {
+.button4 {
     background: $color-accent2;
-    padding: 20px;
-    text-decoration: none;
+    padding: 10px;
     border-radius: 10px;
-    border: 5px solid: lightcyan;
-    @include sans-font(1.6rem);
-    font-weight: 900;
+    border: 5px solid lightgray;
+    @include sans-font(2rem);
     text-transform: uppercase;
+    text-decoration: none;
     &:hover {
-        background: $color-accent3; 
+    background: $color-accent3;
     }
 }
 
@@ -61,7 +60,7 @@ h6 {
     line-height: 2;
     padding: 0 20px;
     &:hover {
-        background: lightgray;
+        background: lightcyan;
     }
 }
 
